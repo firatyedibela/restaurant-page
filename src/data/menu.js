@@ -1,9 +1,11 @@
+import tomato from '../images/meals/tomato.png';
+
 export const soups = [
   {
     name: 'Tomato',
     calories: 83,
     price: 4.50,
-    image: 'images/meals/tomato.jpg',
+    image: tomato,
   },
 ];
 
