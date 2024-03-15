@@ -1,4 +1,5 @@
 import {  soups, mainDishes, deserts } from '../data/menu.js';
+import '../styles/menu-page.css';
 
 export default function renderMenuPage() {
   const content = document.querySelector('#content');
