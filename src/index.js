@@ -1,5 +1,6 @@
-import renderHomePage from './pages/home.js';
-import renderMenuPage from './pages/menu.js';
+import renderHomePage from './pages/home-page.js';
+import renderMenuPage from './pages/menu-page.js';
+import renderContactPage from './pages/contact-page.js';
 
 renderHomePage();
 

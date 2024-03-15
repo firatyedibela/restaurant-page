@@ -8,7 +8,7 @@ export default function renderMenuPage() {
 
   menu.innerHTML = `
     <div class="meals">
-      <p class="meal-type-header">meals</p>
+      <p class="meal-type-header">Soups</p>
       ${generateMealHTML(soups)}
     </div>
     <div class="main-dishes">
