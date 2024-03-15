@@ -18,14 +18,10 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'images',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[hash][ext]',
+        },
       },
     ],
   },
