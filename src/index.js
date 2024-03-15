@@ -7,6 +7,8 @@ import './styles/main.css';
 renderHomePage();
 
 const navButtons = document.querySelectorAll('.nav-btn');
+
+// Make nav buttons interactive
 navButtons.forEach(navBtn => {
   navBtn.addEventListener('click', handlePageClick);
 });
@@ -24,6 +26,19 @@ function handlePageClick(e) {
       renderContactPage();
       break;
   }
+}
+
+// Make nav buttons active when clicked
+navButtons.forEach(navBtn => {
+  navBtn.addEventListener('click', handleNavBtnActive);
+});
+
+function handleNavBtnActive(e) {
+  navButtons.forEach(navBtn => {
+    navBtn.classList.remove('nav-btn-active');
+  });
+
+  e.target.classList.add('nav-btn-active');
 }
 
 // Create restaurant logo
