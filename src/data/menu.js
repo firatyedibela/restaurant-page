@@ -11,6 +11,7 @@ import pizzaPepperoni from '../images/meals/pizza-pepperoni.jpg';
 import fettucine from '../images/meals/fettucine.jpg';
 import spagetti from '../images/meals/spagetti.jpg';
 import ribEye from '../images/meals/rib-eye.jpg';
+import tBone from '../images/meals/t-bone-steak.jpg';
 import tunaMaki from '../images/meals/tuna-maki.jpg';
 import sashimi from '../images/meals/sashimi.png';
 import chocolateMousse from '../images/meals/chocolate-mouse.jpg';
@@ -32,25 +33,25 @@ export const soups = [
     image: broccoli,
   },
   {
-    name: 'Beef Noodle Soup',
+    name: 'Beef Noodle',
     calories: 280,
     price: 7.50,
     image: beefNoodle,
   },
   {
-    name: 'Black Bean Soup',
+    name: 'Black Bean',
     calories: 258,
     price: 6.50,
     image: blackBean,
   },
   {
-    name: 'Mushroom Soup',
+    name: 'Mushroom',
     calories: 221,
     price: 5.50,
     image: mushroom,
   },
   {
-    name: 'Cabbage Soup',
+    name: 'Cabbage',
     calories: 62,
     price: 3.50,
     image: cabbage,
@@ -99,6 +100,12 @@ export const mainDishes = [
     calories: 485,
     price: 18,
     image: ribEye,
+  },
+  {
+    name: 'T-Bone Steak',
+    calories: 470,
+    price: 18,
+    image: tBone,
   },
   {
     name: 'Tuna Maki',
