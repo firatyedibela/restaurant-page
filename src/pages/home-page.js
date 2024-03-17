@@ -8,7 +8,8 @@ export default function renderHomePage() {
   // Create welcome text
   const infoText = document.createElement('p');
   infoText.classList.add('home-info-text');
-  infoText.textContent = 'Welcome to our Wonderful Restaurant. We serve the best food in town since 1976. Enjoy your meal!  '
+  infoText.textContent = 'Welcome to our Wonderful Restaurant. We serve the best food in town since 1976. Enjoy your meal!';
+  infoText.style.fontFamily = 'Times New Roman';
 
   // Create restaurant image
   const restaurantImage = new Image();
@@ -18,7 +19,7 @@ export default function renderHomePage() {
   // Create address container
   const address = document.createElement('div');
   address.classList.add('home-address-container');
-  
+
   // Create marker logo
   const mapMarker = new Image();
   mapMarker.src = marker;
@@ -28,6 +29,7 @@ export default function renderHomePage() {
   const addressText = document.createElement('p');
   addressText.classList.add('home-address');
   addressText.textContent = 'Odin - 3 Avenue 7/12 Harvard/CS50';
+  addressText.style.fontFamily = 'Times New Roman';
 
   address.appendChild(mapMarker);
   address.appendChild(addressText);
