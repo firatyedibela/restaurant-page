@@ -1,0 +1,76 @@
+.menu p {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  gap: 64px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  font-family: Roboto;
+  padding-bottom: 100px;
+}
+
+.soups,
+.main-dishes,
+.deserts {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  column-gap: 18px;
+  row-gap: 22px;
+}
+
+.meal-type-header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: -500px;
+}
+
+.meal-type-description {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: rgb(80, 80, 80);
+}
+
+.meal-container {
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-between;
+  height: 145px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.meal-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 16px;
+}
+
+.meal-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(32, 32, 32);
+  letter-spacing: 1px;
+}
+
+.meal-calories,
+.meal-price {
+  color: rgb(70, 70, 70);
+  letter-spacing: 1px;
+  
+}
+
+.meal-image {
+  height: 143px;
+  width: 143px;
+  object-fit: cover;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
