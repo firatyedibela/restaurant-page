@@ -1,3 +1,8 @@
+import '../styles/contact-page.css';
+import mapMarker from '../images/map-marker-orange.svg';
+import phone from '../images/phone.svg';
+import email from '../images/email.svg';
+
 export default function renderContactPage() {
   const content = document.querySelector('#content');
 
@@ -5,19 +10,21 @@ export default function renderContactPage() {
   contact.classList.add('contact');
 
   contact.innerHTML = `
-    <header>
+    <header class="contact-header-container">
       <p class="contact-header">CONTACT US</p>
+      <div class="header-pseudo-border"></div>
     </header>
     <form>
-      <input type="text" name="name" placeholder="Your name*" required>
-      <input type="text" name="email" placeholder="Your e-mail*" required>
-      <input type="text" name="phone" placeholder="Your phone" required>
-      <input type="text" name="message" placeholder="Message*" required>
+      <input class="contact-input text-input" type="text" name="name" placeholder="Your name*" required>
+      <input class="contact-input text-input" type="text" name="email" placeholder="Your e-mail*" required>
+      <input class="contact-input text-input" type="text" name="phone" placeholder="Your phone">
+      <textarea rows="10" class="contact-input textarea-input" name="message" placeholder="Message*" required></textarea>
+      <button class="send-message-btn">SEND MESSAGE</button>
     </form>
     <footer>
       <div class="contact-card-container">
         <div class="card-logo-container">
-          <img src="" alt="">
+          <img class="contact-footer-logo" src="${mapMarker}" alt="">
         </div>
         <div class="card-info-container">
           <div class="card-header">Postal Address</div>
@@ -29,11 +36,11 @@ export default function renderContactPage() {
       </div>
       <div class="contact-card-container">
         <div class="card-logo-container">
-          <img src="" alt="">
+          <img class="contact-footer-logo" src="${phone}" alt="">
         </div>
         <div class="card-info-container">
           <div class="card-header">Phones</div>
-          <div class="card-info">
+          <div class="card-info-phones">
             <div class="keys">
               <p>Phone:</p>
               <p>FAX:</p>
@@ -47,7 +54,7 @@ export default function renderContactPage() {
       </div>
       <div class="contact-card-container">
         <div class="card-logo-container">
-          <img src="" alt="">
+          <img class="contact-footer-logo" src="${email}" alt="">
         </div>
         <div class="card-info-container">
           <div class="card-header">Email</div>
